@@ -1,0 +1,10 @@
+// Central exports for scene objects
+export { createRoom } from './Room.js';
+export { createSofa } from './Sofa.js';
+export { createCoffeeTable } from './CoffeeTable.js';
+export { createBookshelf } from './Bookshelf.js';
+export { createPlant } from './Plant.js';
+export { createRug } from './Rug.js';
+export { createTVUnit } from './TVUnit.js';
+export { createCeilingLight } from './CeilingLight.js';
+export { createWallFrame } from './WallFrame.js';
