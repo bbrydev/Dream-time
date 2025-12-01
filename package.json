@@ -1,0 +1,32 @@
+{
+  "name": "dreamware-experience",
+  "version": "1.0.0",
+  "description": "DreamWare Hackathon 2025 - Visualize your dreams in 3D | Engineering the Surreal",
+  "type": "module",
+  "keywords": [
+    "dreams",
+    "3d",
+    "visualization",
+    "three.js",
+    "hackathon",
+    "dreamware",
+    "surreal",
+    "ai"
+  ],
+  "author": "Your Name",
+  "repository": "https://github.com/bbrydev/Dream-time",
+  "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "echo \"No lint configured yet\""
+  },
+  "dependencies": {
+    "groq-sdk": "^0.37.0",
+    "three": "^0.160.0"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}

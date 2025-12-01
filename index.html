@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DreamWare - Visualize Your Dreams</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="app">
+    <canvas id="canvas"></canvas>
+    
+    <!-- Chat Interface -->
+    <div id="chat-interface" class="chat-interface hidden">
+      <div class="chat-container">
+        <div class="chat-header">
+          <div class="chat-title">
+            <h2>🌟 Dream Companion</h2>
+            <button id="toggle-music-btn" class="icon-btn" title="Toggle Music">
+              🎵
+            </button>
+            <button id="new-dream-btn" class="icon-btn" title="New Dream">
+              ✨
+            </button>
+            <button id="settings-btn" class="icon-btn" title="Reset">
+              🔄
+            </button>
+          </div>
+        </div>
+        
+        <div id="chat-messages" class="chat-messages"></div>
+        
+        <div class="chat-input-wrapper">
+          <textarea 
+            id="chat-input" 
+            class="chat-input" 
+            placeholder="Describe your dream or continue the conversation..."
+            rows="2"
+          ></textarea>
+          <button id="send-btn" class="send-btn">
+            <span>Send</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Dream History Overlay -->
+    <div id="dream-history" class="dream-history hidden">
+      <div class="history-container">
+        <div class="history-header">
+          <h2>Your Dream Archive</h2>
+          <button id="close-history" class="close-btn">×</button>
+        </div>
+        <div id="history-list" class="history-list">
+          <p class="empty-state">No dreams recorded yet...</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Dream Status Display -->
+    <div id="dream-status" class="dream-status hidden">
+      <div class="status-content"></div>
+    </div>
+    
+    <!-- Loading Screen -->
+    <div id="loading">
+      <div class="loading-text">Loading Dream Space...</div>
+      <div class="loading-subtitle">Reality is unstable...</div>
+    </div>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
